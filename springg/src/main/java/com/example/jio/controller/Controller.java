@@ -14,7 +14,7 @@ public class Controller {
     @Autowired
     OrderImpl order;
 
-@PostMapping("/getmap")
+@GetMapping("/getmap")
 public List<Order> GetAll(){
 return order.find();
     }
